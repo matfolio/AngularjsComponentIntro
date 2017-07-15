@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="./scripts/app.js"></script>
+   <script src="./scripts/script.js"></script>
+</head>
+<body ng-app="ComponentIntro" >
+
+	<div ng-controller= "mainCtrl as ctrl">
+	<test-detail name = "ctrl.name"  pass-as-string = {{ctrl.stringContent}}  pass-as-action = "ctrl.actionContent()"></test-detail>
+</div>
+</body>
+</html>
